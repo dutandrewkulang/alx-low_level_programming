@@ -1,11 +1,10 @@
-#include <stdio.h>
-
 /**
-  * main - Entry point
-  * Return: Always 0 (success)
+ * main - the entry path
+ * Return: always return 0
 */
+  
 int main(void)
 {
-	printf("hello world");
+
 	return (0);
 }
