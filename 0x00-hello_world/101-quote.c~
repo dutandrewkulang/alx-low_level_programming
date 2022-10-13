@@ -1,0 +1,10 @@
+/**
+ * main - the entry path
+ * Return: always return 0
+*/
+  
+int main(void)
+{
+	write(2,""
+	return (0);
+}
