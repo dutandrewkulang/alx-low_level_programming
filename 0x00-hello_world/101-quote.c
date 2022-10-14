@@ -1,3 +1,4 @@
+#include <sdio.h>
 #include <unistd.h>
 /**
  * main - the entry path
