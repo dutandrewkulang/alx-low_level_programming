@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include <stlib.h>
+#include <stdlib.h>
 /**
  * main - Entry path
  * Return: 0 when success
