@@ -8,7 +8,7 @@
 int main(void)
 {
 
-		char nums;
+		int nums;
 /*
 * All numbers in ASII 48 to 57
 */
