@@ -12,7 +12,7 @@ int main(void)
 		int hex;
 /*
 * All numbers in ASII 48 to 57
-* all hex letter are between 97 to 102 
+* all hex letter are between 97 to 102
 */
 	for (nums = 48; nums <= 57; nums++)
 	{
