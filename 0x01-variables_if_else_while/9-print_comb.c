@@ -16,7 +16,11 @@ int main(void)
 	for (nums = 48; nums <= 57; nums++)
 	{
 		putchar(nums);
+		if (n < 57)
+			{
 		putchar(44);
+		putchar(' ');
+			}
 	}
 		putchar(10);
 	return (0);
