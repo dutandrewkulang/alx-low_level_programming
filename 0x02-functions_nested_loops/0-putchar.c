@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * main - using _putchar to the standard io
@@ -6,14 +7,12 @@
 */
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+		char *x = "_putchar";
+		while (*x)
+		{
+			_putchar(*x);
+			x++;
+		}
+		_putchar('\n')
 return (0);
 }
