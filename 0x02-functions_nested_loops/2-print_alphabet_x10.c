@@ -1,22 +1,22 @@
 #include "main.h"
-
 /**
- * print_alphabet - prints out a-z
- * Return: void
- * There are more than two ways to solve thgis question
-*/
-void print_alphabet(void)
+ * print_alphabet_x10 - a function that prints 10 times the alphabet
+ *
+ * Return: x10 a-z
+ */
+void print_alphabet_x10(void)
 {
-		char alpha;
-		int count = 0;
+	int n, ten;
 
-		while (count <= 10)
+	ten = 0;
+
+	while (ten < 10)
+	{
+		for (n = 'a'; n <= 'z'; n++)
 		{
-				for (alpha = 'a'; alpha <= 'z'; alpha++)
-				{
-						_putchar(alpha);
-				}
-				_putchar(10);
-				count++;
+			_putchar(n);
 		}
+		ten++;
+		_putchar('\n');
+	}
 }
