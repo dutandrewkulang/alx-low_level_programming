@@ -5,19 +5,18 @@
  * Return: void
  * There are more than two ways to solve thgis question
 */
-
 void print_alphabet(void)
 {
-	char alpha;
-	int count = 0;
+		char alpha;
+		int count = 0;
 
-	while (count <= 10)
+		while (count <= 10)
 		{
-			for (alpha = 'a'; alpha <= 'z'; alpha++)
+				for (alpha = 'a'; alpha <= 'z'; alpha++)
 				{
-					_putchar(alpha);
+						_putchar(alpha);
 				}
-			_putchar(10);
-			count++;
+				_putchar(10);
+				count++;
 		}
 }
