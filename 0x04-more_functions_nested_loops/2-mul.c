@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _isdigit - returns 1 if upper case else 0
+ * mul - returns the product of c and s
  * Return: 0
- * @c: is to passed into the function
+ * @c: holds the value of first number passed in
+ * @s: holds the value of second number passed in
  * Checks if character is upper case
 */
 int mul(int c, int s)
