@@ -1,1 +1,5 @@
-more on function
+- use isupper function provided by
+
+```c
+<ctype>
+```
