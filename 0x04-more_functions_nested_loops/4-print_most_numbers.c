@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_more_numbers - prints out all numbers from 0 -> 9 a part from 2 and 4
+ * print_most_numbers - prints out all numbers from 0 -> 9 a part from 2 and 4
  * Return: All numbers a part from 2 and 4
  * does not print 2 and 4
 */
