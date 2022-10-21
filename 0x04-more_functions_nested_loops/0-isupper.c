@@ -5,23 +5,14 @@
  * Checks if character is upper case
 */
 
-int main(void)
-{
-		char c;
-		c = 'A';
-
-		int _isupper(int c)
+int _isupper(int c)
 		{
 				if (isupper(c))
 				{
-						_putchar(1);
+						return (1);
 				}
 				else
 				{
-						_putchar(0);
+						return (0);
 				}
 		}
-		printf("%c: %d", c, _isupper(c));
-
-		return (0);
-}
