@@ -3,7 +3,9 @@
  * _strlen- takes in a string of characters and return the string length
  * finding length of a string using strlen from string.h
  * @s: input parameter
- * len : returns the integer length of string of characters in s
+ * len - returns the integer length of string of characters in s
+ * Return: length of string
+ *
  */
 int _strlen(char *s)
 {
