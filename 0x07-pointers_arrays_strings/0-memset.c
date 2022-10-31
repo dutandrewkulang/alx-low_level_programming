@@ -7,14 +7,14 @@
 * Return: s
 * s - is the char return value
  */
-char _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int memory = 0;
 
 while (memory < n)
 {
 s[memory] = b;
-memory++
+memory++;
 }
 return (s);
 }
