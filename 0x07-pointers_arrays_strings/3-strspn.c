@@ -1,50 +1,36 @@
 #include "main.h"
-
 /**
- * _strspn - calculate (in bytes) the length of a segment of s that consists
- * entirely of bytes in accept
- *
- * @s: null terminated string
- * @accept: string of characters to accept
- * 
- * Return - number of characters spanned
- *
+ * _strspn - gets the length of a prefix substring
+ * @s: pointer to a string
+ * @accept: bytes
+ * Return: Always 0
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	int k, j;
-	int count = 0;
+	int i, j;
+	int counter = 0;
 
-	for (k = 0; s[k] ; k++)
+	/*first we check the length of the string *s until *s not  null*/
+	for (i = 0; s[i] != 0; i++)
 	{
-		for (j = 0; accept[j]; j++)
+		/*we go through every character of accept[j] string until not null*/
+		for (j = 0; accept[j] != 0; j++)
 		{
-			if (s[k] == accept[j])
+			/*we check if *accept equal to *s*/
+			/*if yes, we found a match*/
+			if (accept[j] == s[i])
 			{
-				if (_strncmp(s, accept, j) != 0)
-					count++;
+				/*counter + 1 everytime we found a match*/
+				counter++;
+				break; /*break if we find a match*/
 			}
 		}
-
-	}
-
-	return count;
-}
-
-int
-_strncmp(char *s, char *d, int n)
-{
-	int k;
-
-	for (k = 0; k < n && s[k] && d[k]; k++)
-	{
-		if (s[k] != d[k]) {
-			if (s[k] > d[k])
-				return (s[k] - d[k]);
-			return (d[k] - s[k]);
+		/* if *accept is null, break the loop*/
+		if (accept[j] == 0)
+		{
+			break;
 		}
 	}
-
-	return (0);
+	/*return the total of matches*/
+	return (counter);
 }
