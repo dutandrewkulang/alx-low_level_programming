@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * print_chessboard
+ * print_chessboard - chess game
+ * @a: pointer variable
 */
 void print_chessboard(char (*a)[8])
 {
