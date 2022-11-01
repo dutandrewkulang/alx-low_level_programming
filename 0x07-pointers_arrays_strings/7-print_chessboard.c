@@ -1,17 +1,50 @@
 #include "main.h"
-void
-print_chessboard(char (*a)[8])
-{
-	int c, d;
 
-  /* Thinking of other ways to do this that don't use magic numbers */
-  
-	for (c = 0; c < 8; c++)
+/**
+ * _strspn - calculate (in bytes) the length of a segment of s that consists
+ * entirely of bytes in accept
+ *
+ * @s: null terminated string
+ * @accept: string of characters to accept
+ * 
+ * Return - number of characters spanned
+ *
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	int k, j;
+	int count = 0;
+
+	for (k = 0; s[k] ; k++)
 	{
-		for (d = 0; d < 8; d++)
+		for (j = 0; accept[j]; j++)
 		{
-			putchar(a[c][d]);
+			if (s[k] == accept[j])
+			{
+				if (_strncmp(s, accept, j) != 0)
+					count++;
+			}
 		}
-		putchar('\n');
+
 	}
+
+	return count;
+}
+
+int
+_strncmp(char *s, char *d, int n)
+{
+	int k;
+
+	for (k = 0; k < n && s[k] && d[k]; k++)
+	{
+		if (s[k] != d[k]) {
+			if (s[k] > d[k])
+				return (s[k] - d[k]);
+			return (d[k] - s[k]);
+		}
+	}
+
+	return (0);
 }
