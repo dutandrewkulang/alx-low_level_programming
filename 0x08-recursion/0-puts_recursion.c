@@ -1,15 +1,18 @@
 #include "main.h"
 /**
- * _puts_recursion - prints string and newline at the end of the string
- *@s: pointer variable
+ * _puts_recursion - prints a string, followed by a new line
+ * @s: string
+ * Return: Always 0
  */
 void _puts_recursion(char *s)
 {
-		int len;
-
-for (len = 0; s[len] != 0; len++)
-{
-	putchar(s[len]);
-}
-		printf("\n");
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+	{
+		_putchar(10);
+	}
 }
