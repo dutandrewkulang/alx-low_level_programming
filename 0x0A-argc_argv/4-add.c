@@ -1,32 +1,22 @@
 #include "main.h"
-/**
- * 
-*/
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-    int i, sum;
+	int c, d, sum = 0;
 
-    if (argc == 1)
-    {
-        printf("0\n");
-    }
-    else
-    {   
-        for (i = 1; i < argc; i++)
-        {
-            if (isdigit(atoi(argv[i])))
-            {
-            sum = sum + atoi(argv[i]);
-            
-            }
-            else
-            {
-                printf("Error\n");
-                return (1);
-            }
-        }
-        
-    }
-//printf("siz of integer is %ld\n", sizeof(i));
-    return (0);
+	for (c = 1; c < argc; c++)
+	{
+		for (d = 0; argv[c][d]; d++)
+		{
+			if (!isdigit(argv[c][d]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+	}
+
+	for (c = 0; c < argc; c++)
+		sum += atoi(argv[c]);
+	printf("%d\n", sum);
+	return (0);
 }
