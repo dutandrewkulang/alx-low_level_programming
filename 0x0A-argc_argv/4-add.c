@@ -1,4 +1,7 @@
 #include "main.h"
+/**
+ * main is simple addition calculator
+*/
 int main(int argc, char **argv)
 {
 	int c, d, sum = 0;
