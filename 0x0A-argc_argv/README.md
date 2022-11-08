@@ -107,3 +107,24 @@ At postion argv[1] = Dut
 At postion argv[2] = 123
 At postion argv[3] = A L X
 ```
+
+# Unused variables in C 
+
+sometimes certain variable are delcleared to be used else where but not necessary in the source, gcc compiler will raise issues if you declear a variable and not used, this is because C is memory minded, i.e how do you manage and declearing an unused variable is a waste of memory.
+
+we used the unused attribute to over come this compiler warning message
+
+`data_type name __attribute__((unused)) variable_name`
+
+```c
+void sum(int __attribute__ ((unused)) x, int y)
+
+```
+
+Above we state to gcc compiler that variable `x` might `not` be unused in the function but it's was intensional
+
+Example 2
+
+```C
+#include <stdio.h>
+```
