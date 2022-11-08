@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- * main is simple addition calculator
+ * main - is simple addition calculator
+ * @argc: counts the arguments passed and return an integer
+ * @argv: is a double array pointer
+ * Return:  zero
 */
 int main(int argc, char **argv)
 {
