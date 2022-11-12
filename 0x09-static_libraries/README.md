@@ -37,7 +37,7 @@ add.c add.o sub.c sub.o mult.c mult.o div.c div.o
 ```
 **Create the archive file**
 
-Now that we have the object files, the must be **<u>linked</u>** into an archive file with the use of ``ar``by the link forming one large ``.a`` file.
+Now that we have the object files, the must be <b><u>linked</u></b> into an archive file with the use of ``ar``by the link forming one large ``.a`` file.
 
 The output will be a pre-compiled object code file.
 
