@@ -42,7 +42,7 @@ Now that we have the object files, the must be <b><ins>linked</ins></b> into an 
 The output will be a pre-compiled object code file.
 
 ```sh
-ar -rc liboperator.a *.o
+ar -rc liboperators.a *.o
 ```
 By conversion your archive file should file name should start with `lib` followed by the name. Example ```liboperators``` "library for operators"
 
@@ -59,9 +59,31 @@ Indexing helps in sorting the functions order of their call.
 if a function is called before it is declared that will cause an error of ```unknown function``` so indexing makes sure that that functions declarations are before function calls.
 
 ```sh
-$ ranlib liboperator.a
+$ ranlib liboperators.a
 ```
 
 ```sh
-nw liboperator.a
+nw liboperators.a
+```
+
+**Letting the compiler know where to find the archieved operators library**
+```main.c```
+
+```c
+#include <stdio>
+#include "main.c"
+/**
+ * main - Perform basic calculations
+ * return: returns zero if the program ran successfully
+ *
+*/
+int main(void)
+{
+	add(2,3);
+	sub(20,35);
+	mult(4,3);
+	div(14,7);
+
+	return (0);
+}
 ```
