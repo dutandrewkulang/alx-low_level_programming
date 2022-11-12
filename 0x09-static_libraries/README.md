@@ -14,9 +14,17 @@ add.c sub.c mult.c div.c
 ```
 **Create object files for the files**
 
-```C
+```sh
 gcc -c *.c
 ```
 The above command will create co-responding object file names ``file.c`` -> ``file.o`` there is no need to specify the output file names
 
+``-c`` -> Stop the compiling after the assembly stage. Translate ``.c`` to ``.o``
 
+
+*Now the object files have been created*
+
+```sh
+ls 
+add.c add.o sub.c sub.o mult.c mult.o div.c div.o
+```
