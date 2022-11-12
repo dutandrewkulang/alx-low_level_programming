@@ -124,3 +124,11 @@ int main(void)
 	return (0);
 }
 ```
+
+```sh
+$ gcc  main.c -L. liboperators.a -o result 
+```
+
+``-L.`` -> L dot: Locate the library file inside the current directory
+
+``-o`` -> Save the output inside result. result will be an executable file 
