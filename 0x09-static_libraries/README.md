@@ -33,12 +33,13 @@ void div(int n, int m);
 
 ```C
 /**
- *
- *
+ * Add - Performs addition on two numbers
+ * @n: integer variable
+ * @m: integer variable
 */
 void Add(int n, int m)
 {
-	printf("%d + %d = %d", n , m , n + m);	
+	printf("%d + %d = %d\n", n , m , n + m);	
 }
 ```
 
