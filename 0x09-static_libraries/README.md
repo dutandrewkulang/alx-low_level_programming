@@ -17,6 +17,13 @@ add.c sub.c mult.c div.c
 ```sh
 gcc -c *.c
 ```
+
+OR
+
+```sh
+gcc -c all_your_file_names.c
+#List all your file name gcc -c add.c sub.c div.c mult.c but it is stressful
+```
 The above command will create co-responding object file names ``file.c`` -> ``file.o`` there is no need to specify the output file names
 
 ``-c`` -> Stop the compiling after the assembly stage. Translate ``.c`` to ``.o``
@@ -28,3 +35,6 @@ The above command will create co-responding object file names ``file.c`` -> ``fi
 ls 
 add.c add.o sub.c sub.o mult.c mult.o div.c div.o
 ```
+**Create the archive file**
+
+Now that we have the object files, the must be ~linked~ into an archive file with the use of ``ar``
