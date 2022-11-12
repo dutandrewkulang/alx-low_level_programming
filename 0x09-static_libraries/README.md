@@ -59,7 +59,7 @@ Indexing helps in sorting the functions order of their call.
 if a function is called before it is declared that will cause an error of ```unknown function``` so indexing makes sure that that functions declarations are before function calls.
 
 ```sh
-ranlib liboperator.a
+$ ranlib liboperator.a
 ```
 
 ```sh
