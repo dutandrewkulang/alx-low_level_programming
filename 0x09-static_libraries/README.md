@@ -6,13 +6,13 @@ Static library is made when object code ``.o`` files are linked together to form
 
 **Example.** 
 
-Files used for basic C operation
+Files used for basic C operation.
 
-Prototype declaration
-
-```main.h```
+- Prototype declaration
 
 <hr>
+
+```main.h```
 
 ```h
 #ifndef MAIN_H
