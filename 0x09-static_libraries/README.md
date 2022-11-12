@@ -8,6 +8,24 @@ Static library is made when object code ``.o`` files are linked together to form
 
 Files used for basic C operation
 
+Prototype declaration
+
+```main.h```
+
+```h
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+
+void add(int n);
+void sub(int n);
+void mult(int n);
+void div(int n);
+
+#endif
+```
+
 ```sh
 ls
 add.c sub.c mult.c div.c
@@ -67,6 +85,7 @@ nw liboperators.a
 ```
 
 **Letting the compiler know where to find the archieved operators library**
+
 ```main.c```
 
 ```c
