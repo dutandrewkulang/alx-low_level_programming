@@ -37,4 +37,19 @@ add.c add.o sub.c sub.o mult.c mult.o div.c div.o
 ```
 **Create the archive file**
 
-Now that we have the object files, the must be ~linked~ into an archive file with the use of ``ar``
+Now that we have the object files, the must be ~linked~ into an archive file with the use of ``ar``by the link forming one large ``.a`` file.
+
+The output will be a pre-compiled object code file.
+
+```sh
+ar -rc liboperator.a *.o
+```
+By conversion your archive file should file name should start with `lib` followed by the name. Example liboperators "library for operators"
+
+``-rc`` flags -> ``recursively create`` the archive
+
+
+**Indexing the library**
+indexing helps in sorting the functions order of their call.
+
+if a function is called before it is declared that will cause an error of un```known function``` so indexing makes sure that that functions declarations are before function calls.
