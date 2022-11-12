@@ -124,17 +124,31 @@ add.c add.o sub.c sub.o mult.c mult.o div.c div.o
 ```
 **Create the archive file**
 
-Now that we have the object files, the must be <b><ins>linked</ins></b> into an archive file with the use of ``ar``by the link forming one large ``.a`` file.
+Now that we have the object files, they must be <b><ins>linked</ins></b> into an archive file with the use of ``ar`` by the linker forming one large ``.a`` file.
+
 
 The output will be a pre-compiled object code file.
 
 ```sh
 ar -rc liboperators.a *.o
 ```
+
+```sh
+#Create archive and index it as well
+ar -rcs liboperators.a *.o
+ 
+```
+
+
 By conversion your archive file should file name should start with `lib` followed by the name. Example ```liboperators``` "library for operators"
 
-``-rc`` flags -> ``recursively create`` the archive
+``-rc`` flags -> ``recursively create`` the archive file.
 
+``r`` : if the file exists overwrite its contents with newer one.
+
+``c`` : Create the archive if it does not exist.
+
+``s`` : Add index to the archive or update it if it already exists.
 
 **Indexing the library**
 
