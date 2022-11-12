@@ -29,19 +29,70 @@ void div(int n, int m);
 ```
 <hr>
 
-- ``Add.c``
+- ``add.c``
 
 ```C
 /**
- * Add - Performs addition on two numbers
+ * add - Performs addition on two numbers
  * @n: integer variable
  * @m: integer variable
 */
-void Add(int n, int m)
+void add(int n, int m)
 {
 	printf("%d + %d = %d\n", n , m , n + m);	
 }
 ```
+
+<hr>
+
+- ``sub.c``
+
+```C
+/**
+ * sub - Performs subtraction on two numbers
+ * @n: integer variable
+ * @m: integer variable
+*/
+void sub(int n, int m)
+{
+	printf("%d - %d = %d\n", n , m , n - m);	
+}
+```
+
+<hr>
+
+
+- ``mult.c``
+
+```C
+/**
+ * mult - Performs multiplication on two numbers
+ * @n: integer variable
+ * @m: integer variable
+*/
+void mult(int n, int m)
+{
+	printf("%d * %d = %d\n", n , m , n * m);	
+}
+```
+
+<hr>
+
+- ``div.c``
+
+```C
+/**
+ * div - Performs division on two numbers
+ * @n: integer variable
+ * @m: integer variable
+*/
+void div(int n, int m)
+{
+	printf("%d / %d = %d\n", n , m , n / m);	
+}
+```
+
+<hr>
 
 ```sh
 ls
