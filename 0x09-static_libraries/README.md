@@ -20,19 +20,33 @@ Files used for basic C operation.
 
 #include <stdio.h>
 
-void add(int n);
-void sub(int n);
-void mult(int n);
-void div(int n);
+void add(int n, int m);
+void sub(int n, int m);
+void mult(int n, int m);
+void div(int n, int m);
 
 #endif
 ```
 <hr>
 
+- ``Add.c``
+
+```C
+/**
+ *
+ *
+*/
+void Add(int n, int m)
+{
+	printf("%d + %d = %d", n , m , n + m);	
+}
+```
+
 ```sh
 ls
 add.c sub.c mult.c div.c
 ```
+
 **Create object files for the files**
 
 ```sh
