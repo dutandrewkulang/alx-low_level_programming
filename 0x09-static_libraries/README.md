@@ -44,7 +44,7 @@ The output will be a pre-compiled object code file.
 ```sh
 ar -rc liboperator.a *.o
 ```
-By conversion your archive file should file name should start with `lib` followed by the name. Example liboperators "library for operators"
+By conversion your archive file should file name should start with `lib` followed by the name. Example ```liboperators``` "library for operators"
 
 ``-rc`` flags -> ``recursively create`` the archive
 
