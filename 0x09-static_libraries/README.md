@@ -11,7 +11,9 @@ Files used for basic C operation
 Prototype declaration
 
 ```main.h```
+
 <hr>
+
 ```h
 #ifndef MAIN_H
 #define MAIN_H
