@@ -197,3 +197,40 @@ gcc main3.c -o main3
 The above will cause memory leak of unused memory
 
 - <ins>Free</ins>
+
+Though using `malloc`` makes your program portable, memory management is left in your hands.
+
+       1. You will need to keep track of all addresses of allocated memory (variable of type pointer)
+       2. You will have to deallocate every memory space you previously allocated yourself.
+
+Failure to do so, your program can run out of space, or the operating system will kill the programm as it's still running
+
+<hr>
+
+`killme.c`
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - Understanding malloc and free
+ * Return: 0.
+*/
+
+int main(void)
+{
+	while (1)
+	{
+		malloc(sizeof(char) * 1024;
+	}
+	return (0);
+}
+```
+
+```sh
+gcc kill.c -o killme
+./killme
+#result
+Killed
+```
