@@ -27,6 +27,22 @@ In the above example, the program arguments and local variables will be stored a
 
 So the program reserves space and uses it without you having to think about it. This memory can be `read` to and `written` to. Immediately the program finishes execution this memory is <ins>freed</ins>
 
+<hr>
+
+## What is the difference between automatic memory allocation and Dynamic memory allocation
+
+```txt
+`automatic memory allocation`
+Lets say we have throw party, and assume that that 50 people will turn up, so we prepare 50 plates of food.
+
+if more than 50 people show up then other people would miss food
+or if say 8 people turn up, then 42 plates have been wasted (if no food killers is among them)
+```
+```txt
+`Dynamic memory allocation`
+Here we say we first wait for the people to show up and we prepare food according to their number
+Here we able to adjust and prevent wastage of resource and also ensuring that no visitor misses food
+```
 
 - Dynamic memory allocation (malloc)
 
