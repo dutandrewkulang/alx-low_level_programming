@@ -131,3 +131,68 @@ gcc main2.c -o main2
 #Result
 98, -1024, 402
 ```
+malloc will create memory space for 3 integers
+
+Again `sizeof` will ensure portability of your program a cross diiferent machines since ``int`` is represented differently on `64-bits` and `32-bits` computers
+
+``*tab`` points to integers, so on 64-bits machines int = 4bytes so 4*3 = `12bytes` will be reserved.
+
+<hr>
+
+**However**
+
+since automatic allocation also frees the space, malloc does not do so, it must be told to do so, but the use `free`
+
+<hr>
+
+`main3.c`
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * sum - Adds 3 integers and prints their sum
+ *@a: first integer
+ *@b: second integer
+ *@c: third integer
+ * Return: nothing
+ */
+
+void sum(int a, int b, int c)
+{
+	int *m;
+	int result;
+
+	m = malloc(sizeof(*m) * 3);
+
+	m[0] = a;
+	m[1] = b;
+	m[2] = c;
+
+	result = m[0] + m[1] + m[2];
+
+	printf("%d + %d + %d = %d\n", m[0] + m[1] + m[2], result);
+}
+/**
+ * main - understanding malloc and free 
+ *Return: 0
+ */
+
+int main(void)
+{
+	sum(98, 402, -1024);
+	return (0);
+}
+```
+
+<hr>
+
+```sh
+gcc main3.c -o main3
+#Result
+
+```
+
+The above will cause memory leak of unused memory
+
