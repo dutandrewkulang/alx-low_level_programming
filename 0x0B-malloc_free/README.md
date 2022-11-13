@@ -1,6 +1,6 @@
 # Automatic memory allocation & malloc (Dynamic memory allocation)
 
-- Automatic memory allocation
+- <ins>Automatic memory allocation</ins>
 
 When we declare a variable or use strings with double quotes `""` the program automatically takes care of the memory allocation.
 
@@ -44,7 +44,7 @@ Here we first wait for the people to show up and we prepare food according to th
 Here we able to adjust and prevent wastage of resource and also ensuring that no visitor misses food
 ```
 
-- Dynamic memory allocation (malloc)
+- <ins>Dynamic memory allocation (malloc)</ins>
 
 `malloc` is a function used to allocate certain amount of memory to a program during execution aka run time.
 
@@ -196,3 +196,4 @@ gcc main3.c -o main3
 
 The above will cause memory leak of unused memory
 
+- <ins>Free</ins>
