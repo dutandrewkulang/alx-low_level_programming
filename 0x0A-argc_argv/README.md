@@ -37,11 +37,12 @@ Lets advance our program a little bit
 ```c
 // main.c
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
     printf("The amount of arguments counted by argc are %d\n", argc);
-    return (0);
+    EXIT_SUCESS;
 }
 ```
 ```sh
