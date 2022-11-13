@@ -95,3 +95,39 @@ Dut
 Above malloc is used to allocate 4 bytes of memory space which we then fill with characters.
 
 `sizeof` operator is very helpful here as it is what we use to tell the size of the datatype since on different machines datatypes are not the same size. This makes our program portable. on 64-bits machines our program will allocate 4bytes since `char` takes up 1byte
+
+<hr>
+
+`main2.c`
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - Understanding malloc and free
+ * Return: 0
+*/
+
+int main(void)
+{
+	char *tab;
+
+	tab = malloc(sizeof(*tab) * 3);
+
+	tab[0] = 98;
+	tab[1] = -1024;
+	tab[2] = 402;
+	
+
+	printf("%d, "%d, "%d\n", tab[0], tab[1], tab[2]);
+	
+	return (0);
+}
+```
+```sh
+gcc main2.c -o main2
+./main2
+#Result
+98, -1024, 402
+```
