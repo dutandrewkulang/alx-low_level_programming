@@ -33,7 +33,7 @@ So the program reserves space and uses it without you having to think about it. 
 
 ```txt
 `automatic memory allocation`
-Lets say we have throw party, and assume that that 50 people will turn up, so we prepare 50 plates of food.
+Lets say we have thrown party, and assume that that 50 only people will turn up, so we prepare 50 plates of food.
 
 if more than 50 people show up then other people would miss food
 or if say 8 people turn up, then 42 plates have been wasted (if no food killers is among them)
