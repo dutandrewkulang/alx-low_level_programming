@@ -36,11 +36,11 @@ So the program reserves space and uses it without you having to think about it. 
 Lets say we have thrown party, and assume that that 50 only people will turn up, so we prepare 50 plates of food.
 
 if more than 50 people show up then other people would miss food
-or if say 8 people turn up, then 42 plates have been wasted (if no food killers is among them)
+or if say 8 people turn up, then 42 plates have been wasted (if no food killers are among them)
 ```
 ```txt
 `Dynamic memory allocation`
-Here we say we first wait for the people to show up and we prepare food according to their number
+Here we first wait for the people to show up and we prepare food according to their number
 Here we able to adjust and prevent wastage of resource and also ensuring that no visitor misses food
 ```
 
