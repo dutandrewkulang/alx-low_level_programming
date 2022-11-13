@@ -58,7 +58,7 @@ int main(void)
 {
 	char *str;
 
-	str = malloc(sizeof(char) * 3);
+	str = malloc(sizeof(char) * 4);
 
 	str[0] = 'D';
 	str[1] = 'u';
@@ -76,4 +76,6 @@ gcc main.c -o main
 #result
 Dut
 ```
+Above malloc is used to allocate 4 bytes of memory space which we then fill with characters.
 
+`sizeof` operator is very helpful here as it is what we use to tell the size of the datatype on other machines since not all machines datatypes as the same size. This makes our program portable. on 64-bits machines our program will allocate 4bytes since `char` is size 1
