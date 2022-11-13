@@ -2,7 +2,9 @@
 
 argc and argv are used in C to interact with the main function which is the base of every C file.
 
-argc -> argument count: As the name implies it counts and returns the result.
+``argc`` -> argument count: As the name implies it counts and returns the result.
+
+``argv[]`` -> an array containing all the arguments passed into the main function at run time. 
 
 lets take an example.
 
@@ -35,11 +37,12 @@ Lets advance our program a little bit
 ```c
 // main.c
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
     printf("The amount of arguments counted by argc are %d\n", argc);
-    return (0);
+    EXIT_SUCESS;
 }
 ```
 ```sh
