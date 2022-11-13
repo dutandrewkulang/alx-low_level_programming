@@ -78,4 +78,4 @@ Dut
 ```
 Above malloc is used to allocate 4 bytes of memory space which we then fill with characters.
 
-`sizeof` operator is very helpful here as it is what we use to tell the size of the datatype on other machines since not all machines datatypes as the same size. This makes our program portable. on 64-bits machines our program will allocate 4bytes since `char` is size 1
+`sizeof` operator is very helpful here as it is what we use to tell the size of the datatype since on different machines datatypes are not the same size. This makes our program portable. on 64-bits machines our program will allocate 4bytes since `char` takes up 1byte
