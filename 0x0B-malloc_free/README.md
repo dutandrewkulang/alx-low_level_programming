@@ -47,7 +47,7 @@ protype: `void *malloc(size_t size);`
 
 ```C
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * main - Understanding malloc
