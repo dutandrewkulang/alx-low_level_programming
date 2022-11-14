@@ -44,3 +44,4 @@ sum = 78 + 22
 | ``__TIME__`` | print current time "HH:MM:SS"|
 | ``__FILE__`` | print file name in which the program is being compiled in |
 | ``__LINE__`` | print line number in which it is called |
+| ``__STDC__`` | returns 1 if compiler supports ANSI standard |
