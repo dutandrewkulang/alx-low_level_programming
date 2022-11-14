@@ -38,10 +38,10 @@ sum = 78 + 22
 ```
 **Some pre-defined macros**
 
-| Macro | Definition |
-|-------| -----------|
-| ``__DATE__`` |  Print current date "MM DD YYYY" |
-| ``__TIME__`` | print current time "HH:MM:SS"|
-| ``__FILE__`` | print file name in which the program is being compiled in |
-| ``__LINE__`` | print line number in which it is called |
-| ``__STDC__`` | returns 1 if compiler supports ANSI standard |
+| Macro | Specifier | Definition |
+|-------| ----- | ------|
+| ``__DATE__`` | %s | Print current date "MM DD YYYY" |
+| ``__TIME__`` | %s | print current time "HH:MM:SS"|
+| ``__FILE__`` | %s | print file name in which the program is being compiled in |
+| ``__LINE__`` | %d | print line number in which the macro is called |
+| ``__STDC__`` | %d | returns 1 if compiler supports ANSI standard |
