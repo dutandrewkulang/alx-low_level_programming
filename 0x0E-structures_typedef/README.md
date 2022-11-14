@@ -1,0 +1,3 @@
+# struct and typedef
+
+alx
