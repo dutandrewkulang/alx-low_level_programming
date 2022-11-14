@@ -2,6 +2,6 @@
 
 #include <stdio.h>
 
-#define ABS(val) ( (val) < 0 ? -(val) : (val) )
+#define ABS(val) ( ((val) < 0) ? -(val) : (val) )
 
 #endif
