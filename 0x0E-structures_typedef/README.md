@@ -20,3 +20,7 @@ struct tag_name {
        /* declare as many members as desired, but the entire structure size must be known to the compiler*/
 };
 ```
+
+# typedef
+
+It is used to create an additional name (alias) for another data type, but does not create a new type.
