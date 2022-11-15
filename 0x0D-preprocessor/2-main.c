@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints tha name of the file it run fom
- *Return: Exit_success
+ * main - prints tha name of the file it run from
+ * followed by a new line
+ *Return: 0 
 */
 int main(void)
 {
