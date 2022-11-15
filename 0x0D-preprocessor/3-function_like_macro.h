@@ -1,7 +1,4 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-
-#include <stdio.h>
-
-#define ABS(val) (((val) < 0) ? -(val) : -(val) )
-
+#ifndef _MUL_
+#define _MUL_
+#define ABS(x) ((x) < 0 ? -1 * (x) : (x))
 #endif
