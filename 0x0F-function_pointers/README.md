@@ -11,18 +11,20 @@ Example
 
 #include <stdio.h>
 
-void func(int a)
+void fun(int a)
 {
 printf("The value of a is %d\n", a);
 }
 
 int main()
 {
-void (*ptr_func)(int) = &fun;
+void (*ptr_fun)(int) = &fun;
 /*
- * (*ptr_func) is a pointer to a function that takes in one integer argument.
- * (*ptr_func) is passed the memory address of func.
+ * (*ptr_fun) is a pointer to a function that takes in one integer argument.
+ * (*ptr_fun) is passed the memory address of func.
  */
+
+ (*ptr_fun)(100);
 return (0);
 }
 
