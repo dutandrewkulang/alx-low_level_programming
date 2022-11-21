@@ -24,6 +24,12 @@ void (*ptr_fun)(int) = &fun;
  * (*ptr_fun) is passed the memory address of func.
  */
 
+/* The above line is equivalent of following two
+       void (*fun_ptr)(int);
+       fun_ptr = &fun; 
+*/
+
+
  (*ptr_fun)(100);
 return (0);
 }
