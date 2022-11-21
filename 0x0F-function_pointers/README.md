@@ -7,7 +7,7 @@ Example
 
 `fun.c`
 
-`C
+```C
 
 #include <stdio.h>
 
@@ -26,5 +26,5 @@ void (*ptr_func)(int) = &fun;
 return (0);
 }
 
-`
+```
 
