@@ -94,6 +94,6 @@ int main(void)
 	PC p1, p2;
 	strcpy = (p1.name, "MacBook pro");
 	p1.price = 3599.9; // USD
-	printf("%s costs %d on e-suki\n");
+	printf("%s costs %lf on e-suki\n", p1.name, p1.price);
 }
 ```
