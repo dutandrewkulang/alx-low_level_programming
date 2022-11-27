@@ -74,26 +74,29 @@ int main(void)
 ```typedef2.c```
 
 ```C
+
 #include <stdio.h>
 #include <string.h>
 
 struct Computer
 {
-	char *name;
+	char name[100];
 	double price;
 	char *make;
 };
 
-typedef struct Computer PC
+typedef struct Computer PC;
 /**
  * Above struct Computer has been aliased using typedef as PC
  * So instead of calling Computer you can use PC
 */
 int main(void)
 {
-	PC p1, p2;
-	strcpy = (p1.name, "MacBook pro");
-	p1.price = 3599.9; // USD
-	printf("%s costs %lf on e-suki\n", p1.name, p1.price);
+	PC p1;
+	p1.price = 309.3;
+	strcpy(p1.name, "Macbook pro");
+	printf("Name = %s\nprice = %lf\n", p1.name, p1.price);
+	return (0);
 }
+
 ```
