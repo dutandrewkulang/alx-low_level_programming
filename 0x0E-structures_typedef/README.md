@@ -24,3 +24,18 @@ struct tag_name {
 # typedef
 
 It is used to create an additional name (alias) for another data type, but does not create a new type.
+
+<hr>
+`typedef.c`
+
+```C
+typedef unsigned char btye;
+
+int main(void)
+{
+	byte c;
+	c = 200;
+	return (0);
+}
+
+```
