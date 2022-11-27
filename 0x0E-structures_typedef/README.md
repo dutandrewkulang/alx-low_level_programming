@@ -10,7 +10,7 @@ Being a block of contiguous memory, each field within a struct is located at a c
 
 Because the contents of the a struct are stored in contiguous memory, the `sizeof` operator must be used to get the
 
-<ins>Declaration</ins>
+<ins><b>Declaration</b></ins>
 
 ```C
 struct tag_name {
@@ -21,7 +21,7 @@ struct tag_name {
 };
 ```
 
-<ins>Declaring structure variables</ins>
+<ins><b>Declaring structure variables</b></ins>
 
 There are two ways of declaring structures, either along with structure definition or after the structure is defined
 
