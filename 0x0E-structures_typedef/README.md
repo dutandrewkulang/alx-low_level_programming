@@ -25,7 +25,7 @@ struct tag_name {
 
 There are two ways of declaring structures, either along with structure definition or after the structure is defined
 
-- Along structure definition
+- 1. Along structure definition
 
 ```c
 struct Student
@@ -35,7 +35,7 @@ struct Student
 	char sex;
 }student1, student2;
 ```
-- After structure definition
+- 2. After structure definition
 
 ```c
 struct Student
@@ -47,6 +47,7 @@ struct Student
 
 struct Student student1, student2; 
 ```
+However, you are required to use the second (2<sup>nd</sup>) method for structure variable declaration. The first(1<sup>st</sup>) option has limitations.
 
 # typedef
 
@@ -54,7 +55,7 @@ It is used to create an additional name (alias) for another data type, but does 
 
 <hr>
 
-```typedef.c```
+```typedef1.c```
 
 ```C
 typedef unsigned char byte;
@@ -70,4 +71,29 @@ int main(void)
 }
 
 ```
+```typedef2.c```
 
+```C
+#include <stdio.h>
+#include <string.h>
+
+struct Computer
+{
+	char *name;
+	double price;
+	char *make;
+};
+
+typedef struct Computer PC
+/**
+ * Above struct Computer has been aliased using typedef as PC
+ * So instead of calling Computer you can use PC
+*/
+int main(void)
+{
+	PC p1, p2;
+	strcpy = (p1.name, "MacBook pro");
+	p1.price = 3599.9; // USD
+	printf("%s costs %d on e-suki\n");
+}
+```
