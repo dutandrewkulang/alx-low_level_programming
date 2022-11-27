@@ -21,6 +21,33 @@ struct tag_name {
 };
 ```
 
+<ins>Declaring structure variables</ins>
+
+There are two ways of declaring structures, either along with structure definition or after the structure is defined
+
+- Along structure definition
+
+```c
+struct Student
+{
+	char *name;
+	int age;
+	char sex;
+}student1, student2;
+```
+- After structure definition
+
+```c
+struct Student
+{
+	char *name;
+	int age;
+	char sex; 
+};
+
+struct Student student1, student2; 
+```
+
 # typedef
 
 It is used to create an additional name (alias) for another data type, but does not create a new type.
