@@ -29,8 +29,11 @@ It is used to create an additional name (alias) for another data type, but does 
 `typedef.c`
 
 ```C
-typedef unsigned char btye;
+typedef unsigned char byte;
 
+/* unsigned char can be represented by calling byte
+ * 
+*/
 int main(void)
 {
 	byte c;
@@ -39,3 +42,4 @@ int main(void)
 }
 
 ```
+
