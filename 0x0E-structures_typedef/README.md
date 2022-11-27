@@ -26,7 +26,7 @@ struct tag_name {
 It is used to create an additional name (alias) for another data type, but does not create a new type.
 
 <hr>
-`typedef.c`
+```typedef.c```
 
 ```C
 typedef unsigned char byte;
