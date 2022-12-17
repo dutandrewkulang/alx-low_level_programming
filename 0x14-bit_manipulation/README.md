@@ -11,5 +11,6 @@ C has special operators that do bitwise operations
 NOT|~| 1|
 LEFT SHIFT|<<|__|
 RIGHT SHIFT|>>|__|
+XOR|^|2|
 
 
