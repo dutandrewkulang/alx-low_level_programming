@@ -1,0 +1,1 @@
+# Dynamic libraries also known as shared libraries.
