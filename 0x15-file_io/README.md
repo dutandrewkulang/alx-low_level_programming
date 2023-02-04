@@ -1,4 +1,4 @@
-# <ins>File Input Ouput in C</ins>
+# File Input Ouput in C
 
 file
 | Integer value | Name | <unistd.h> symbolic constant | <stdio.h> file stream |
