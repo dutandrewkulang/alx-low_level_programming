@@ -1,10 +1,16 @@
 # File Input Ouput in C
 
-file
+file descriptors are integers that represent open files in Unix-like operaring systems. They are used to identify and access files by the operating system and by the application.
+
+When a program opens a file, the operating system assigns a unique file descriptor to the file, which can then be used to read and write to the file.
+
+     **Table repesenting the file descriptors in unix like systems**
+
 | Integer value | Name | <unistd.h> symbolic constant | <stdio.h> file stream |
 |-------------------|----------|----------------------------------|---------------------------|
 | 0 | Standard input | STDIN_FILENO | stdin |
 |1| Standard output|STDOUT_FILENO| stdout|
+|2| Standard error|STDERR_FILENO|stderr|
 
 
 O_RDONLY: This flag opens the file for reading only
