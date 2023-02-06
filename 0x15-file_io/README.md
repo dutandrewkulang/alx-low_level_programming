@@ -27,6 +27,31 @@ When we run our program, sometimes we want the results of the program to stored 
 
 C has functionalities that allows programs to directly store information on `computer disk`
 
+C has a special data type `FILE` that enables us to work with memory addresses of files therefore can be used to work on files.
+
+```c
+FILE * fptr
+````
+`Explanation:`
+
+```c
+int * intptr // means that intptr will point to the memory address of variable whose data type will be an integer.
+
+FILE * fptr // means that fptr will point to a memory address whose type will of type FILE
+
+```
+
+### functions that help us in handling files
+
+`fopen("filename", "mode")` takes in the file name as first argument the mode that we wish to use to work on the file
+
+`fclose(file_ptr_name)` close the file, it signal the operating system that we are done working on the file, so memory that was being used should be freed.
+
+|Mode|symbol|functionality|Creates file| deletes content|
+|-----|-----|-------|----|---------|
+|write|w|writes to a file| Yes|Yes|
+|read|r|reads content| No| No|
+|append|a| appends content to the end of the file|No|No 
 ```c
 #include <stdio.h>
 
