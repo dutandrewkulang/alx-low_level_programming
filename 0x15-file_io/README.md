@@ -20,3 +20,27 @@ O_WRONLY: This flag opens the file for writing only
 O_RDWR: This flag opens the file for both reading and writing.
 
 O_CREAT: This flag can be used incombination with `O_WRONLY` and `O_RDWR` to create a file if it does not exist.
+
+file in C
+
+When we run our program, sometimes we want the results of the program to stored some where on the computer. By default the program stores output on the `RAM` which once the computer is powered off loses all data.
+
+C has functionalities that allows programs to directly store information on `computer disk`
+
+```c
+#include <stdio.h>
+
+int main()
+{
+     FILE *fptr;
+     
+     fptr = fopen("filename", "mode");
+     /*
+     
+     manippulation code goes here
+     
+     */
+     fclose(fptr);
+     return 0;
+}
+```
