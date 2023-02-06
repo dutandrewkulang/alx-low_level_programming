@@ -43,7 +43,7 @@ FILE * fptr // means that fptr will point to a memory address whose type will of
 
 ### functions that help us in handling files
 
-`fopen("filename", "mode")` takes in the file name as first argument the mode that we wish to use to work on the file
+`fopen("filename", "mode")` takes in the file name as first argument the mode that we wish to use to work on the file. If the file is not in some folder as the program, then you **MUST** specify the complete path
 
 `fclose(file_ptr_name)` close the file, it signal the operating system that we are done working on the file, so memory that was being used should be freed.
 
