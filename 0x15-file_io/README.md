@@ -32,6 +32,8 @@ C has a special data type `FILE` that enables us to work with memory addresses o
 ```c
 FILE * fptr
 ````
+**You can only access the content of a file by the help of `fptr`**
+
 `Explanation:`
 
 ```c
@@ -47,11 +49,20 @@ FILE * fptr // means that fptr will point to a memory address whose type will of
 
 `fclose(file_ptr_name)` close the file, it signal the operating system that we are done working on the file, so memory that was being used should be freed.
 
+`fputc('character', file_ptr_name)` writes a single character into the file
+
+`fputs'characters', file_ptr_name)` writes a stream of characters into the file
+
+`fprintf` prints out the content in the file to the stdout.
+
 |Mode|symbol|functionality|Creates file| deletes content|
 |-----|-----|-------|----|---------|
 |write|w|writes to a file| Yes|Yes|
 |read|r|reads content| No| No|
-|append|a| appends content to the end of the file|No|No 
+|append|a| appends content to the end of the file| Yes|No 
+
+### General syntax
+
 ```c
 #include <stdio.h>
 
@@ -66,6 +77,38 @@ int main()
      
      */
      fclose(fptr);
+     return 0;
+}
+```
+<hr>
+
+`single.c`
+```c
+#include <stdio.h>
+
+int main()
+{
+     FILE *fptr;
+     
+     fptr = fopen("abc.txt", "w"); //opening the file in write mode
+     fputc('Z', fptr); // writing Z into abc.txt
+     fclose(fptr); // closing the file to free computer resources
+     return 0;
+}
+```
+
+`string.c`
+```c
+#include <stdio.h>
+
+int main()
+{
+     char name[20] = "Hahaha C is for advanced software engineers like me";
+     FILE *fptr;
+     
+     fptr = fopen("xyz.txt", "w"); //opening the file in write mode
+     fputs(name, fptr); // writing name into xyz.txt
+     fclose(fptr); // closing the file to free computer resources
      return 0;
 }
 ```
