@@ -13,4 +13,21 @@ LEFT SHIFT|<<|__|
 RIGHT SHIFT|>>|__|
 XOR|^|2|
 
+***
+`AND (&)`
+
+The bitwise & operator takes two operands, converts the operands to bits and then does operations.
+
+`At bit level & return 1 from both operands are 1 else 0`
+
+- 4 & 6
+
+    4 --> 100
+
+    6 --> 110
+    
+    100 => 4
+
+
+
 
