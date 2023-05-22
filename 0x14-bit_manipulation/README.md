@@ -32,3 +32,11 @@ The bitwise & operator takes two operands, converts the operands to bits and the
 `OR (|)`
 
 `takes two operands and returns 1 if any or both of the operands is 1`
+
+***
+
+`NOT (~)
+
+`takes one operands and does the opposite (flips) 1001 would be flipped to 0110 `
+
+***
