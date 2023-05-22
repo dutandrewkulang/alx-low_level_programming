@@ -28,6 +28,7 @@ The bitwise & operator takes two operands, converts the operands to bits and the
     
     100 => 4
 
+***
+`OR (|)`
 
-
-
+`takes two operands and returns 1 if any or both of the operands is 1`
