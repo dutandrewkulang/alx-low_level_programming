@@ -9,5 +9,5 @@ int get_endianness(void)
 {
 unsigned int m = 1, *ptr;
 ptr = &m;
-return (*((char *) p));
+return (*((char *) ptr));
 }
