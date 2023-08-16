@@ -5,8 +5,9 @@
  * Return: 0 on success
  */
 
-int get_endianness(void){
-    unsigned int m = 1, *ptr;
-    ptr = &m;
-    return (*((char *) p));
+int get_endianness(void)
+{
+unsigned int m = 1, *ptr;
+ptr = &m;
+return (*((char *) p));
 }
